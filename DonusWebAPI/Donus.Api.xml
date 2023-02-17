@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DonusWebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Donus.Api.Controllers.MailingController.Get(System.String,System.String)">
+            <summary>
+            Get all clients 
+            </summary>
+            <param name="mailingid"></param>
+            <param name="nome"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Donus.Api.Controllers.UsuarioController.Get(System.String,System.String)">
+            <summary>
+            Gets all users.
+            </summary>
+            /// <param name="userId">The user identifier.</param>
+            <param name="name">The pagination filter.</param>
+            <returns>The paginated HTTP response with list of users.</returns>
+        </member>
+        <member name="M:Donus.Api.Controllers.UsuarioController.Post(Donus.Application.DataContract.Request.Usuario.CreateUsuarioRequest)">
+            <summary>
+            Creates new user. Only users with admin role can access this endpoint.
+            </summary>
+            <param name="request">The request data.</param>
+            <returns>The HTTP response indicating if this request was successful or not.</returns>
+        </member>
+        <member name="M:Donus.Api.Controllers.UsuarioController.Auth(Donus.Application.DataContract.Request.Usuario.AuthRequest)">
+            <summary>
+            Authenticates the user.
+            </summary>
+            <param name="request">The request data.</param>
+            <returns>The result containing user info and authorization token, if authentication was successful.
+            </returns>
+        </member>
+    </members>
+</doc>
